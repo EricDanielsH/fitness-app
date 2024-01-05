@@ -6,6 +6,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
+import ImageSlider from "../components/ImageSlider";
 
 export default function Home() {
   return (
@@ -45,6 +46,11 @@ export default function Home() {
             <Ionicon name="notifications" size={hp(3)} color="gray" />
           </View>
         </View>
+      </View>
+
+      {/* IMAGE CARRUSEL */}
+      <View>
+        <ImageSlider />
       </View>
 
     </SafeAreaView>
