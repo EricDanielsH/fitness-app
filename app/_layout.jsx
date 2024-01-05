@@ -9,6 +9,10 @@ export default function Layout() {
       screenOptions={{
         headerShown: false,
       }} 
-    />
+    >
+      <Stack.Screen name="exercises" options={{
+        presentation: "fullScreenModal",
+      }} />
+    </Stack>
   )
 }

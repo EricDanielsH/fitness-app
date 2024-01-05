@@ -7,12 +7,13 @@ import {
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 import ImageSlider from "../components/ImageSlider";
+import BodyParts from "../components/BodyParts";
 
 export default function Home() {
   return (
     // Use safe area to not have problems with notchs, etc
     <SafeAreaView
-      className="bg-slate-500 flex-1 flex space-y-5"
+      className="bg-white flex-1 flex space-y-5"
       edges={["top"]}
     >
       <StatusBar style="dark"></StatusBar>
@@ -51,6 +52,11 @@ export default function Home() {
       {/* IMAGE CARRUSEL */}
       <View>
         <ImageSlider />
+      </View>
+
+      {/* BODY PARTS */}
+      <View className="flex-1">
+        <BodyParts />
       </View>
 
     </SafeAreaView>
