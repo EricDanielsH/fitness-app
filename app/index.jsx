@@ -8,8 +8,11 @@ import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import Animated, { FadeInDown, FadeOut } from "react-native-reanimated";
+import { useRouter } from "expo-router";
 
 export default function Index() {
+  const router = useRouter();
+
   return (
     <View className="flex-1 flex justify-end">
       <StatusBar style="light" />
@@ -47,6 +50,7 @@ export default function Index() {
           className="flex items-center"
         >
           <TouchableOpacity
+            onPress={() => router.push("home")}
             className="bg-rose-400 flex items-center justify-center rounded-full border-[3px] border-neutral-200"
             style={{ height: hp(7), width: wp(80) }}
           >
