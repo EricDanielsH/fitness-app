@@ -3,7 +3,7 @@ import React from "react";
 import { Stack } from "expo-router";
 
 export default function Layout() {
-  LogBox.ignoreAllLogs(["Warning: Failed prop type"]);
+  LogBox.ignoreLogs(["Warning: Failed prop type"]);
   return (
     <Stack
       // To remove white lines from top and bottom
