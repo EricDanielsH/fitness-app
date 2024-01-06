@@ -65,7 +65,6 @@ export default function Exercises() {
           {item.name.charAt(0).toUpperCase() + item.name.slice(1)} exercises{" "}
         </Text>
         <View className="mb-10">
-          <Text>Keloke</Text>
           <ExerciseList data={exercises} />
         </View>
       </View>

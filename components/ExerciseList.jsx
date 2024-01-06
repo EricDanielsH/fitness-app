@@ -7,6 +7,7 @@ import {
 import { FlatList } from "react-native-gesture-handler";
 import { useRouter } from "expo-router";
 import { Image } from "expo-image";
+import Animated, { FadeInDown } from "react-native-reanimated";
 
 export default function ExerciseList({ data }) {
   const router = useRouter();
@@ -32,7 +33,7 @@ export default function ExerciseList({ data }) {
 
 const ExerciseCard = ({ router, index, item }) => {
   return (
-    <View>
+    <Animated.View entering={FadeInDown.duration(500).delay(index * 100).springify()}>
       <TouchableOpacity className="flex py-3 space-y-2" onPress={() => router.push({pathname: "/exerciseDetails", params: item})}>
         <View className="bg-neutral-200 shadow rounded-[25px]">
           <Image
@@ -49,6 +50,6 @@ const ExerciseCard = ({ router, index, item }) => {
           {item?.name.charAt(0).toUpperCase() + item?.name.slice(1)}
         </Text>
       </TouchableOpacity>
-    </View>
+    </Animated.View>
   );
 };

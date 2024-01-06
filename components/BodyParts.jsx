@@ -9,6 +9,7 @@ import { FlatList } from "react-native-gesture-handler";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
+import Animated, { FadeInDown } from "react-native-reanimated";
 
 export default function BodyParts() {
   const router = useRouter();
@@ -38,7 +39,7 @@ export default function BodyParts() {
 
 const BodyPartCard = ({ item, index, router }) => {
   return (
-    <View>
+    <Animated.View entering={FadeInDown.duration(500).delay(index * 200).springify()}>
       <TouchableOpacity
         onPress={() => router.push({ pathname: "/exercises", params: item })}
         style={{ width: wp(20) * 2.1, height: hp(20) }}
@@ -66,6 +67,6 @@ const BodyPartCard = ({ item, index, router }) => {
           </Text>
         </LinearGradient>
       </TouchableOpacity>
-    </View>
+    </Animated.View>
   );
 };
