@@ -94,15 +94,17 @@ export default function ExerciseDetails() {
           Instructions
         </Animated.Text>
 
-        {item.instructions.split(",").map((instruction, index) => {
+        {item.instructions.split(".,").map((instruction, index) => {
           return (
             <Animated.Text
-              entering={FadeInDown.delay((index + 6) * 100).duration(300).springify()}
+              entering={FadeInDown.delay((index + 6) * 100)
+                .duration(300)
+                .springify()}
               style={{ fontSize: hp(2) }}
               className="text-neutral-800"
               key={instruction}
             >
-              {index + 1}. {instruction}{" "}
+              {index + 1}. {instruction}{instruction.charAt(instruction.length - 1) !== "." && "."}
             </Animated.Text>
           );
         })}
