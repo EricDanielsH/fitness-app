@@ -4,7 +4,6 @@ export const sliderImages = [
   require("../assets/images/slide3.png"),
   require("../assets/images/slide4.png"),
   require("../assets/images/slide5.png"),
-<<<<<<< HEAD
 ];
 
 export const bodyParts = [
@@ -51,6 +50,3 @@ export const bodyParts = [
   },
 ];
 
-=======
-]
->>>>>>> parent of 4ce365c (Complete Home page and prepare exercises page)

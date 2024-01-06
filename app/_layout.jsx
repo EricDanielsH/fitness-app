@@ -9,7 +9,6 @@ export default function Layout() {
       // To remove white lines from top and bottom
       screenOptions={{
         headerShown: false,
-<<<<<<< HEAD
       }}
     >
       <Stack.Screen
@@ -27,9 +26,3 @@ export default function Layout() {
     </Stack>
   );
 }
-=======
-      }} 
-    />
-  )
-}
->>>>>>> parent of 4ce365c (Complete Home page and prepare exercises page)
