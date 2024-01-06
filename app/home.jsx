@@ -37,12 +37,12 @@ export default function Home() {
         <View className="space-y-2 flex justify-center items-center ">
           <Image
             source={require("../assets/images/avatar.jpeg")}
-            style={{ height: hp(6), width: wp(6) * 2.2 }}
+            style={{ height: hp(6), width: wp(6) * 2.1 }}
             className="rounded-full"
           />
           <View
             className="bg-neutral-200 flex justify-center items-center rounded-full border-[3px] border-neutral-300"
-            style={{ height: hp(5.5), width: wp(5.5) * 2.2 }}
+            style={{ height: hp(5.5), width: wp(5.5) * 2.1 }}
           >
             <Ionicon name="notifications" size={hp(3)} color="gray" />
           </View>

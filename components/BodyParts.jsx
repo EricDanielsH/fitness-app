@@ -41,19 +41,19 @@ const BodyPartCard = ({ item, index, router }) => {
     <View>
       <TouchableOpacity
         onPress={() => router.push({ pathname: "/exercises", params: item })}
-        style={{ width: wp(20) * 2.2, height: hp(20) }}
+        style={{ width: wp(20) * 2.1, height: hp(20) }}
         className="flex justify-end p-4 mb-4"
       >
         <Image
           source={item.image}
           resizeMode="cover"
-          style={{ width: wp(20) * 2.2, height: hp(20) }}
+          style={{ width: wp(20) * 2.1, height: hp(20) }}
           className="rounded-3xl absolute"
         />
 
         <LinearGradient
           colors={["transparent", "rgba(0,0,0,0.9)"]}
-          style={{ width: wp(20) * 2.2, height: hp(5) }}
+          style={{ width: wp(20) * 2.1, height: hp(5) }}
           start={{ x: 0.5, y: 0 }}
           end={{ x: 0.5, y: 1 }}
           className="absolute bottom-0 rounded-b-3xl"
