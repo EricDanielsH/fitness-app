@@ -4,6 +4,7 @@ export const sliderImages = [
   require("../assets/images/slide3.png"),
   require("../assets/images/slide4.png"),
   require("../assets/images/slide5.png"),
+<<<<<<< HEAD
 ];
 
 export const bodyParts = [
@@ -50,5 +51,6 @@ export const bodyParts = [
   },
 ];
 
-export const RAPID_API_KEY =
-  "70da197feamshd66ac6cccfa8565p149135jsn49c887667e20";
+=======
+]
+>>>>>>> parent of 4ce365c (Complete Home page and prepare exercises page)

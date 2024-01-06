@@ -1,4 +1,4 @@
-import { RAPID_API_KEY } from "../constants";
+import { RAPID_API_KEY } from "@env";
 import axios from "axios"
 
 const baseUrl = "https://exercisedb.p.rapidapi.com";
